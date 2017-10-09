@@ -29,10 +29,10 @@ public class DemoController {
         int delay = 10;
         for (int i = 0; i < count; i++) {
             demoProducer.produce(Integer.toString(i));
-            Thread.sleep(delay);
+//            Thread.sleep(delay);
         }
 
-        jsonResponse.put("message", "Messages produced");
+        jsonResponse.put("message", count + " messages produced");
         return jsonResponse;
     }
 
