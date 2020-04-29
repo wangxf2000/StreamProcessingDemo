@@ -7,7 +7,7 @@ Kafka is used widely for stream processing and Kafka is really a good tools for 
 Kafka is a stream processing system, it also nees high availability and disaster recovery,but the legacy MirrorMaker has a lot of challenge/limitation, make it not easy to satisfy enterprise use.**Streams Replication Manager(SRM)** supports active-active, multi-cluster, cross DC replication & other complex scenarios and HA. it also integrates replication monitoring with SMM.
 
 
-![](StreamProcessing.jpg)[width=800]
+![](StreamProcessing.jpg[width=800])
 
 
 CSP and CSM are focus on Kafka ecosystem, of course the most important one is Kafka.
