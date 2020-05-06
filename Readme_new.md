@@ -15,6 +15,33 @@ Because SMM and SRM is integrated in Cloudera Manager,we use the Cloudera Data P
 ![width=800](ClouderaManager.jpg)
 
 Check the Kafka and Streams Messaging Manager status is normal(Green)
+
+# Prepare the demo
+### Using the following script to prepare the env.
+```
+# install maven and set maven environment variables
+wget https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+tar -zxvf apache-maven-3.6.3-bin.tar.gz
+cd apache-maven-3.6.3 
+
+cat <<EOF >>/etc/profile
+export MAVEN_HOME=/root/apache-maven-3.6.3
+export PATH=\$PATH:\$MAVEN_HOME/bin
+EOF
+
+source /etc/profile
+
+## download the demo script
+cd ..
+git clone https://github.com/wangxf2000/StreamProcessingDemo.git
+cd StreamProcessingDemo
+sed -i "s/localhost/`hostname -A`/g" /root/StreamProcessingDemo/src/main/resources/application.properties
+
+mvn package
+```
+if successful, that works. else check your environment.
+![width=800](mvn_package.jpg)
+
 # Running this 
 ### 1. The kafka services is running on the background. we create a topic with a single partition:
 ```
