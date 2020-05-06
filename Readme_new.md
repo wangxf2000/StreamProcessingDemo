@@ -67,7 +67,19 @@ $ java -jar target/kafka-demo-0.0.1-SNAPSHOT.jar
 back to SMM Overview and check the some-topic topic's data in and data out.if the data in is zero, refresh it.
 ![width=800](SMM_Overview2.jpg)
 click the some-topic topic,you can see some detail info.
-![width=800](soem-topic.jpg)
+![width=800](some-topic.jpg)
+We can view detailed info through the data profile!(data_profile_icon.jpg)
+![width=800](data_profile.jpg)
+Different metrics of the topic can be seen in the data profile. you can see the data in count/data out count/message count.
+When you click the data explore,you can see the partition/offset and detail message.
+![width=800](data_explore.jpg)
+
+when you click the configs,you can see and modify the topic configuration with UI.
+![width=800](topic_configs.jpg)
+if you need modify the advance config of the topic, you can click the advanced to modify it.
+![width=800](topic_configs_advanced.jpg)
+if some consumer consume the message,you can see the latency of the topic.
+
 
 
 
