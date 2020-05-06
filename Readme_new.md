@@ -78,6 +78,13 @@ when you click the configs,you can see and modify the topic configuration with U
 ![width=800](topic_configs.jpg)
 if you need modify the advance config of the topic, you can click the advanced to modify it.
 ![width=800](topic_configs_advanced.jpg)
+SMM doesn't allow to modify some attributes like partition, you can use the command to modify it.
+```
+/opt/cloudera/parcels/CDH/bin/kafka-topics --alter --bootstrap-server `hostname`:9092 --partitions 3 --topic some-topic
+```
+then you can check the result in SMM configs.
+![width=800](topic_partitions1.jpg)
+![width=800](topic_partitions2.jpg)
 if some consumer consume the message,you can see the latency of the topic.
 
 
