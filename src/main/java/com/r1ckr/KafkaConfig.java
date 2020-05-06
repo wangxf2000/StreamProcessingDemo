@@ -59,7 +59,7 @@ public class KafkaConfig {
         demoProducer = new DemoProducer(topic, producerProps, sync);
         demoProducer.start();
         System.out.println("Starting Producer...");
-        demoProducer.produce("Starting Producer...");
+        demoProducer.produce("Starting Producer..."+System.currentTimeMillis());
         return demoProducer;
     }
 
