@@ -56,7 +56,19 @@ if successful, that works. else check your environment.
 ### 3. Check the topic from SMM:
 access SMM from SMM UI
 ![width=800](SMM_UI_Link.jpg)
-or from the link http://grocery.vpc.cloudera.com:9991/ **grocery.vpc.cloudera.com need to be replaced**
+or from the link http://grocery.vpc.cloudera.com:9991/ ***[grocery.vpc.cloudera.com need to be replaced]***
+you can find some-topic topic in SMM Overview.
+![width=800](SMM_Overview.jpg)
+
+### 4. Run the Demo with one producer and one consumer
+```
+$ java -jar target/kafka-demo-0.0.1-SNAPSHOT.jar
+```
+back to SMM Overview and check the some-topic topic's data in and data out.if the data in is zero, refresh it.
+![width=800](SMM_Overview2.jpg)
+click the some-topic topic,you can see some detail info.
+![width=800](soem-topic.jpg)
+
 
 
 
