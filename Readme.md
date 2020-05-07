@@ -42,7 +42,7 @@ mvn package
 if successful, that works. else check your environment.
 ![width=800](mvn_package.jpg)
 
-# Running this 
+# Kafka Demo 
 ### 1. The kafka services is running on the background. we create a topic with a single partition:
 ```
 /opt/cloudera/parcels/CDH/bin/kafka-topics --create --bootstrap-server `hostname`:9092 --replication-factor 1 --partitions 1 --topic some-topic
@@ -53,14 +53,33 @@ if successful, that works. else check your environment.
 /opt/cloudera/parcels/CDH/bin/kafka-topics  --list --bootstrap-server `hostname`:9092
 ```
 
-### 3. Check the topic from SMM:
+### 3.produce message
+```
+/opt/cloudera/parcels/CDH/bin/kafka-console-producer --broker-list `hostname -i`:9092 --topic some-topic
+```
+then you can create some messages in console, like 
+```
+--send message in console
+this is a message
+this is another message
+```
+
+### 4.consume message
+open another console
+```
+/opt/cloudera/parcels/CDH/bin/kafka-console-consumer --bootstrap-server `hostname -i`:9092 --topic console-test  --from-beginning
+```
+then you can see the messages you created in step 3.
+
+# SMM Demo
+### 1. Check the topic from SMM:
 access SMM from SMM UI
 ![width=800](SMM_UI_Link.jpg)
 or from the link http://grocery.vpc.cloudera.com:9991/ ***[grocery.vpc.cloudera.com need to be replaced]***
 you can find some-topic topic in SMM Overview.
 ![width=800](SMM_Overview.jpg)
 
-### 4. Run the Demo with one producer and one consumer
+### 2. Run the Demo with one producer and one consumer
 ```
 $ java -jar target/kafka-demo-0.0.1-SNAPSHOT.jar
 ```
@@ -86,6 +105,7 @@ then you can check the result in SMM configs.
 ![width=800](topic_partitions1.jpg)
 ![width=800](topic_partitions2.jpg)
 if some consumer consume the message,you can see the latency of the topic.
+you can try other functions.
 
 
 
