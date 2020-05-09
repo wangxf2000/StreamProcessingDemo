@@ -27,12 +27,12 @@ NOTE: The following instructions are for using [Putty](https://www.chiark.greene
 
 - Right click to download this ppk key > Save link as > save to Downloads folder
 - Use putty to connect to your node using the ppk key:
--- Connection > SSH > Auth > Private key for authentication > Browse... > Select hdf-workshop.ppk
+** Connection > SSH > Auth > Private key for authentication > Browse... > Select hdf-workshop.ppk
 
 ![width=500](putty.png)
 - Create a new seession called cdf-workshop
--- For the Host Name use: ec2-user@IP_ADDRESS_OF_EC2_NODE
--- Click "Save" on the session page before logging in
+** For the Host Name use: ec2-user@IP_ADDRESS_OF_EC2_NODE
+** Click "Save" on the session page before logging in
 
 ![width=500](putty-session.png)
 if you have any problem to use putty access Node, access this user guide [使用PuTTY从Windows连接到Linux实例](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/putty.html)
@@ -56,9 +56,9 @@ chmod 400 ~/.ssh/china-workshop.pem
  
  ## Login to Cloudera Manager
 - Login to Cloudera Manager web UI by opening http://{YOUR_IP}:7180 and log in with admin/admin
-You will see a list of Hadoop components running on your node on the left side of the page
+- You will see a list of Hadoop components running on your node on the left side of the page
 
-They should all show green (ie started) status. If not, start them by Cloudera Manager via 'restart service' menu for that service
+- They should all show green (ie started) status. If not, start them by Cloudera Manager via 'restart service' menu for that service
  
 
 # Prepare the demo
