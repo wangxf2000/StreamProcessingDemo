@@ -63,7 +63,7 @@ chmod 400 ~/.ssh/china-workshop.pem
  
 
 # Prepare the demo
-### Using the following script to prepare the env.
+### Using PuTTy or teminal to Login the server.Using the following script to prepare the env.
 ```
 # install maven and set maven environment variables
 wget https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
@@ -151,7 +151,7 @@ then you can check the result in SMM configs.
 ![width=800](topic_partitions1.jpg)
 ![width=800](topic_partitions2.jpg)
 if some consumer consume the message,you can see the latency of the topic.
-you can try other functions.
+you can try other functions, like alert policy and create topic.
 
 
 
