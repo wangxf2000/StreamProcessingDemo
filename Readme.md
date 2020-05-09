@@ -16,6 +16,48 @@ Because SMM and SRM is integrated in Cloudera Manager,we use the Cloudera Data P
 
 Check the Kafka and Streams Messaging Manager status is normal(Green)
 
+# Accessing your Cluster
+Credentials will be provided for these services by the instructor:
+- SSH
+- Cloudera Manager
+
+# Use your Cluster
+## To connect using Putty from Windows laptop
+NOTE: The following instructions are for using Putty. You can also use other popular SSH tools such as [MobaXterm](https://mobaxterm.mobatek.net/) or [SmarTTY](https://sysprogs.com/SmarTTY/)
+
+- Right click to download this ppk key > Save link as > save to Downloads folder
+- Use putty to connect to your node using the ppk key:
+-- Connection > SSH > Auth > Private key for authentication > Browse... > Select hdf-workshop.ppk
+![width=800](putty.png)
+- Create a new seession called cdf-workshop
+-- For the Host Name use: ec2-user@IP_ADDRESS_OF_EC2_NODE
+-- Click "Save" on the session page before logging in
+![width=800](putty-session.png)
+if you have any problem to use putty access Node, access this user guide [使用 PuTTY 从 Windows 连接到 Linux 实例](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/putty.html)
+## To connect from Linux/MacOSX laptop
+SSH into your EC2 node using below steps:
+- Right click to download this pem key > Save link as > save to Downloads folder
+- Copy pem key to ~/.ssh dir and correct permissions
+```
+cp ~/Downloads/china-workshop.pem ~/.ssh/
+chmod 400 ~/.ssh/china-workshop.pem
+```
+- Login to the ec2 node of the you have been assigned by replacing IP_ADDRESS_OF_EC2_NODE below with EC2 node IP Address (your instructor will provide this)
+```
+ ssh -i  ~/.ssh/china-workshop.pem ec2-user@IP_ADDRESS_OF_EC2_NODE
+ ```
+ - To change user to root you can:
+ ```
+ sudo su -
+ ```
+ 
+ ## Login to Cloudera Manager
+- Login to Cloudera Manager web UI by opening http://{YOUR_IP}:7180 and log in with admin/admin
+You will see a list of Hadoop components running on your node on the left side of the page
+
+They should all show green (ie started) status. If not, start them by Cloudera Manager via 'Service Actions' menu for that service
+ 
+
 # Prepare the demo
 ### Using the following script to prepare the env.
 ```
