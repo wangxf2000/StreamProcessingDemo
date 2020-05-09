@@ -35,7 +35,8 @@ NOTE: The following instructions are for using [Putty](https://www.chiark.greene
   - Click "Save" on the session page before logging in
 
 ![width=500](putty-session.png)
-if you have any problem to use putty access Node, access this user guide [使用PuTTY从Windows连接到Linux实例](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/putty.html)
+
+- if you have any problem to use putty access Node, access this user guide [使用PuTTY从Windows连接到Linux实例](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/putty.html)
 
 ## To connect from Linux/MacOSX laptop
 SSH into your EC2 node using below steps:
