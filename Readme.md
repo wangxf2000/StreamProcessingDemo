@@ -25,9 +25,9 @@ Credentials will be provided for these services by the instructor:
 ## To connect using Putty from Windows laptop
 NOTE: The following instructions are for using [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). You can also use other popular SSH tools such as [MobaXterm](https://mobaxterm.mobatek.net/) or [SmarTTY](https://sysprogs.com/SmarTTY/)
 
-- Right click to download this ppk key > Save link as > save to Downloads folder
+- Right click to download this [ppk key](china-workshop.ppk) > Save link as > save to Downloads folder
 - Use putty to connect to your node using the ppk key:
-  - Connection > SSH > Auth > Private key for authentication > Browse... > Select hdf-workshop.ppk
+  - Connection > SSH > Auth > Private key for authentication > Browse... > Select china-workshop.ppk
 
 ![width=500](putty.png)
 - Create a new seession called cdf-workshop
@@ -39,7 +39,7 @@ if you have any problem to use putty access Node, access this user guide [使用
 
 ## To connect from Linux/MacOSX laptop
 SSH into your EC2 node using below steps:
-- Right click to download this pem key > Save link as > save to Downloads folder
+- Right click to download this [pem key](china-workshop.pem) > Save link as > save to Downloads folder
 - Copy pem key to ~/.ssh dir and correct permissions
 ```
 cp ~/Downloads/china-workshop.pem ~/.ssh/
