@@ -78,10 +78,10 @@ EOF
 source /etc/profile
 
 ## download the demo script
-cd ..
+cd ~
 git clone https://github.com/wangxf2000/StreamProcessingDemo.git
 cd StreamProcessingDemo
-sed -i "s/localhost/`hostname -A| sed s/[[:space:]]//g`/g" /root/StreamProcessingDemo/src/main/resources/application.properties
+sed -i "s/localhost/`hostname -A | sed s/[[:space:]]//g`/g" src/main/resources/application.properties
 
 mvn package
 ```
