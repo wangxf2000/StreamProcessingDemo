@@ -91,17 +91,17 @@ if successful, that works. else check your environment.
 # Kafka Demo 
 ### 1. The kafka services is running on the background. we create a topic with a single partition:
 ```
-/opt/cloudera/parcels/CDH/bin/kafka-topics --create --bootstrap-server `hostname`:9092 --replication-factor 1 --partitions 1 --topic some-topic
+/opt/cloudera/parcels/CDH/bin/kafka-topics --create --bootstrap-server `hostname -A`:9092 --replication-factor 1 --partitions 1 --topic console-test
 ```
 
 ### 2.Check the topic we just created:
 ```
-/opt/cloudera/parcels/CDH/bin/kafka-topics  --list --bootstrap-server `hostname`:9092
+/opt/cloudera/parcels/CDH/bin/kafka-topics  --list --bootstrap-server `hostname -A`:9092
 ```
 
 ### 3.produce message
 ```
-/opt/cloudera/parcels/CDH/bin/kafka-console-producer --broker-list `hostname -i`:9092 --topic some-topic
+/opt/cloudera/parcels/CDH/bin/kafka-console-producer --broker-list `hostname -A`:9092 --topic console-test
 ```
 then you can create some messages in console, like 
 ```
@@ -113,7 +113,7 @@ this is another message
 ### 4.consume message
 open another console
 ```
-/opt/cloudera/parcels/CDH/bin/kafka-console-consumer --bootstrap-server `hostname -i`:9092 --topic console-test  --from-beginning
+/opt/cloudera/parcels/CDH/bin/kafka-console-consumer --bootstrap-server `hostname -A`:9092 --topic console-test  --from-beginning
 ```
 then you can see the messages you created in step 3.
 
