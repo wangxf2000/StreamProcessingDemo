@@ -121,7 +121,8 @@ then you can see the messages you created in step 3.
 ### 1. Check the topic from SMM:
 access SMM from SMM UI
 ![width=800](SMM_UI_Link.jpg)
-or from the link http://grocery.vpc.cloudera.com:9991/ ***[grocery.vpc.cloudera.com need to be replaced]***
+or from the link http://grocery.vpc.cloudera.com:9991/ ***[grocery.vpc.cloudera.com need to be replaced]
+please using the public IP to replace internal IP.***
 you can find some-topic topic in SMM Overview.
 ![width=800](SMM_Overview.jpg)
 
