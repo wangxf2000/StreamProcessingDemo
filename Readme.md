@@ -153,6 +153,27 @@ then you can check the result in SMM configs.
 ![width=800](topic_partitions2.jpg)
 if some consumer consume the message,you can see the latency of the topic.
 you can try other functions, like alert policy and create topic.
+### Alert
+you can define the notifier and alert policy to notify alert.
+- add notifier 
+  - alert menu -> Notifiers -> Add New
+  ![width=800](add_notifier.jpg)
+  - define the notifier info, you can get the detail notifier property from [Creating a Notifier](https://docs.cloudera.com/csp/2.0.1/managing-alert-policies/topics/smm-creating-alert-notificaton.html)
+  - you can add several notifiers,like 
+   ![width=800](notifier_list.jpg)
+- add Alert Policies
+  - alert menu -> Alert Policies -> Add New
+   ![width=800](add_alert_policy.jpg) 
+  - define the alert policy info, you can get the detail alert policy property from [Creating an Alert Policy](https://docs.cloudera.com/csp/2.0.1/managing-alert-policies/topics/smm-creating-alert-policy.html)
+  - when you add the alert policies, the alert policies list looks like
+   ![width=800](alert_policies_list.jpg) 
+- Alert History
+  - when triggered the alert, you can see the info in alert history and notifier.
+  ![width=800](alert_history.jpg) 
+  - you can see the detail in see more.
+  ![width=800](see_more.jpg) 
+  - you also can see the alert in kafak roles, like topic.
+  ![width=800](topic_alert.jpg) 
 
 
 
