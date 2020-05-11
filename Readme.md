@@ -22,7 +22,7 @@ Credentials will be provided for these services by the instructor:
 - Cloudera Manager
 
 # Use your Cluster
-you can download the [StreamProcessingDemo](https://github.com/wangxf2000/StreamProcessingDemo.git) first, then you can use the ppk or pem file from the github for the next steps.
+you can download the [StreamProcessingDemo](https://github.com/wangxf2000/StreamProcessingDemo.git) github https://github.com/wangxf2000/StreamProcessingDemo.git first, then you can use the ppk or pem file from the github for the next steps.
 ## To connect using Putty from Windows laptop
 NOTE: The following instructions are for using [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). You can also use other popular SSH tools such as [MobaXterm](https://mobaxterm.mobatek.net/) or [SmarTTY](https://sysprogs.com/SmarTTY/)
 
