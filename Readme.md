@@ -175,6 +175,8 @@ you can define the notifier and alert policy to notify alert.
   ![width=800](see_more.jpg) 
   - you also can see the alert in kafak roles, like topic.
   ![width=800](topic_alert.jpg) 
+  - you can see the alert in the notifier,looks like:
+  ![width=800](alert_email.jpg) 
 
 
 
