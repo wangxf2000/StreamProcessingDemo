@@ -45,12 +45,12 @@ SSH into your EC2 node using below steps:
 - Right click to download this [pem key](cdf_workshop.pem) > Save link as > save to Downloads folder
 - Copy pem key to ~/.ssh dir and correct permissions
 ```
-cp ~/Downloads/cdf_workshop.pem ~/.ssh/
-chmod 400 ~/.ssh/cdf_workshop.pem
+cp ~/Downloads/cdf-workshop.pem ~/.ssh/
+chmod 400 ~/.ssh/cdf-workshop.pem
 ```
 - Login to the ec2 node of the you have been assigned by replacing IP_ADDRESS_OF_EC2_NODE below with EC2 node IP Address (your instructor will provide this)
 ```
- ssh -i  ~/.ssh/cdf_workshop.pem ec2-user@IP_ADDRESS_OF_EC2_NODE
+ ssh -i  ~/.ssh/cdf-workshop.pem ec2-user@IP_ADDRESS_OF_EC2_NODE
  ```
  - To change user to root you can:
  ```
